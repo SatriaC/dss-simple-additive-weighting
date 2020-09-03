@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('/login');
+    return redirect()->route('the_dashboard');
 });
 
 // Route::get('/jalan', 'jalanController@index');
@@ -34,7 +34,7 @@ Route::get('/logout', 'AuthController@logout');
 Route::get('/forgot_password', 'AuthController@forgot');
 Route::post('/forgot_password', 'AuthController@postForgot')->middleware('guest')->name('forgot');
 Route::get('/home', 'HomeController@index');
-Route::get('/dashboard', 'DashboardController@index')->middleware('auth');
+Route::get('/dashboard', 'DashboardController@index')->middleware('auth')->name('the_dashboard');
 Route::resource('bantuan', 'BantuanController')->middleware('auth');
 Route::resource('jalan', 'jalanController')->middleware('auth');
 Route::resource('bobot', 'BobotController')->middleware('auth');
@@ -49,3 +49,6 @@ Route::group(['middleware'=>'auth'],function() {
     Route::get('/nilai/edit/{id}', 'NilaiController@edit')->name('nilai.edit');
     Route::post('/nilai/edit/{id}', 'NilaiController@update')->name('nilai.update');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

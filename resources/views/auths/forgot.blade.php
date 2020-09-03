@@ -13,7 +13,8 @@
             <div class="card-body login-card-body">
                 <p class="login-box-msg">You forgot your password? Here you can easily retrieve a new password.</p>
 
-                <form action="{{ route('forgot') }}" method="post">
+                <!-- <form action="{{ route('forgot') }}" method="post"> -->
+                <form action="{{route('password.email') }}" method="post">
                 @csrf
                     <div class="input-group mb-3">
                         <input type="email" class="form-control" placeholder="Email">

@@ -38,6 +38,7 @@ return [
             'transport' => 'smtp',
             'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
             'port' => env('MAIL_PORT', 587),
+            'from' => ['address' => env('MAIL_USERNAME') , 'name' => 'Catur'],
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
             'username' => env('MAIL_USERNAME'),
             'password' => env('MAIL_PASSWORD'),
@@ -68,6 +69,13 @@ return [
 
         'array' => [
             'transport' => 'array',
+        ],
+        'stream' => [
+            'ssl' => [
+                'allow_self_signed' => false,
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+            ],
         ],
     ],
 
