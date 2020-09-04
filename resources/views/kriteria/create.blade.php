@@ -22,6 +22,16 @@
     <section class="content">
         <div class="container-fluid">
             <div class="row">
+                <div class="col-sm-6">
+                        <div class="form-group">
+                            <div class="alert alert-info alert-dismissible">
+                                <button type="button" class="close" data-dismiss="alert"
+                                    aria-hidden="true">×</button>
+                                <h5><i class="icon fas fa-info"></i> Alert!</h5>
+                                Pastikan bila semua nilai bobot dijumlahkan hasilnya adalah 1. Bila tidak, maka hasil tidak maksimal
+                            </div>
+                        </div>
+                    </div>
                 <div class="col-12">
                     <div class="card card-primary">
                         <div class="card-header">
