@@ -69,7 +69,6 @@
                           <li>3. Masukkan nilai setiap jalan pada kriteria yang sudah ditentukan dalam fitur "Input Nilai"</li>
                           <li>4. Lihatlah hasil penghitungan pada fitur "Hasil"</li>
                           <li>5. Klik "Export PDF" untuk mencetak hasil perhitungan dalam bentuk berkas PDF</li>
-                          <li>6. Klik "Reset" untuk menghapus semua data yang telah dibuat</li>
                       </ol>
                     </div>
 
