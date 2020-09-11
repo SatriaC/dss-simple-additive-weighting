@@ -40,28 +40,37 @@
                                 @enderror
                             </div>
                             <div class="form-row">
-                                <div class="form-group col-md-6">
-                                <label for="panjang">Panjang Jalan</label>
-                                <input type="text" name="panjang" class="form-control @error('panjang') is-invalid @enderror" id="panjang" placeholder="Masukkan Panjang Jalan" value="{{ old('panjang') }}">
-                                @error('panjang')
-                                    <div class="invalid-feedback">{{ $message }}</div>
-                                @enderror
+                                <div class="form-group col-md-4">
+                                    <label for="panjang">Panjang Jalan</label>
+                                    <input type="text" name="panjang" class="form-control @error('panjang') is-invalid @enderror" id="panjang" placeholder="Masukkan Panjang Jalan" value="{{ old('panjang') }}">
+                                    @error('panjang')
+                                        <div class="invalid-feedback">{{ $message }}</div>
+                                    @enderror
                                 </div>
-                                <div class="form-group col-md-6">
-                                <label for="lebar">Lebar Jalan</label>
-                                <input type="text" name="lebar" class="form-control  @error('lebar') is-invalid @enderror" id="lebar"placeholder="Masukkan Lebar Jalan" value="{{ old('lebar') }}">
-                                @error('lebar')
-                                    <div class="invalid-feedback">{{ $message }}</div>
-                                @enderror
+                                <div class="form-group col-md-2">
+                                <br><br>Meter
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="lebar">Lebar Jalan</label>
+                                    <input type="text" name="lebar" class="form-control  @error('lebar') is-invalid @enderror" id="lebar"placeholder="Masukkan Lebar Jalan" value="{{ old('lebar') }}">
+                                    @error('lebar')
+                                        <div class="invalid-feedback">{{ $message }}</div>
+                                    @enderror
+                                </div>
+                                <div class="form-group col-md-2">
+                                <br><br> Meter
                                 </div>
                             </div>
                             <div class="form-row">
-                                <div class="form-group col-md-6">
+                                <div class="form-group col-md-4">
                                     <label for="luasKerusakan">Luas Kerusakan</label>
                                     <input type="text" class="form-control @error('luasKerusakan') is-invalid @enderror" name="luasKerusakan" id="luasKerusakan" placeholder="Masukkan Luas Kerusakan Jalan" value="{{ old('luasKerusakan') }}">
                                     @error('luasKerusakan')
                                         <div class="invalid-feedback">{{ $message }}</div>
                                     @enderror
+                                </div>
+                                <div class="form-group col-md-2">
+                                <br><br>Meter
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="tahunPembangunan">Tahun Pembangunan</label>
